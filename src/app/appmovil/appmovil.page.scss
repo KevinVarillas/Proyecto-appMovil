@@ -1,0 +1,109 @@
+*{
+  font-family: 'Alata', sans-serif;
+}
+ion-header {
+  --background-color: black;
+
+  ion-toolbar.wrapper {
+  --background: url('../../assets/img/header.png') no-repeat center center/cover;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  ion-item, ion-toolbar.srchBar{
+    --background: transparent;
+  }
+  ion-item {
+    margin: 2.5vh 0;
+
+      p {
+        margin-top: 15px;
+        font-size: 2rem;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Alata', sans-serif !important;
+
+      }
+  }
+}
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: #333;
+    gap: 10px;
+}
+
+.header ion-icon {
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.description {
+    color: #c5c5c5;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+img{
+  margin: 4px;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.section-title{
+  color: #c5c5c5;
+  font-size: 1.5em;
+  font-family: 'Alata', sans-serif !important;
+  font-weight: bold;
+}
+ion-content {
+
+  ion-list {
+    background: transparent;
+    ion-list-header,
+    ion-item-divider {
+      font-size: 1.3rem;
+      font-family: 'Alata', sans-serif !important;
+    }
+  }
+  ion-card{
+    border-radius: 25px;
+  }
+  ion-card.curso1{
+    --background: #282828;
+    height: 9rem;
+    align-content: center;
+    margin: 15px 6px;
+
+    ion-item{
+      --background:#282828 ;
+      ion-thumbnail{
+        width: 5.5rem;
+        height: 7rem;
+        ion-img{
+          width: 13rem;
+          --border-radius: 25px;
+        }
+      }
+      ion-label{
+        margin-left: 8rem;
+        font-family: 'Alata', sans-serif !important;
+
+
+        ion-text.profesor{
+          font-size: 0.8rem;
+          color: rgb(69, 69, 69);
+        }
+        p.title{
+          margin-top: 5px;
+          font-size: 1.2rem;
+        }
+        p.difficulty{
+          font-size: 0.85rem;
+          margin-top: 10px;
+        }
+      }
+
+    }
+  }
+}

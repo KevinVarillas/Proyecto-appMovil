@@ -1,0 +1,145 @@
+ion-header {
+  --background-color: black;
+
+  ion-toolbar.wrapper {
+    --background: url('../../assets/img/header.png') no-repeat center center/cover;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ion-title{
+      font-size: 1.5rem;
+      font-family: 'Alata', sans-serif !important;
+
+    }
+  }
+}
+
+ion-toolbar ion-back-button {
+  color: rgb(255, 255, 255); /* Asegúrate que el ícono sea visible */
+  font-size: 50px;
+  padding-left: 10px;
+}
+
+ion-content {
+  --background: #1a1a1a;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: 'Alata', sans-serif !important;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Alata', sans-serif !important;
+  color: var(--ion-color-primary);
+}
+
+ion-grid {
+  margin-bottom: 20px;
+}
+
+.check-col {
+  text-align: center;
+  font-family: 'Alata', sans-serif !important;
+}
+ion-col{
+  font-family: 'Alata', sans-serif !important;
+
+}
+
+.x-mark {
+  color: #ff6b6b;
+  font-size: 18px;
+}
+
+.check-mark {
+  color: #4cd137;
+  font-size: 18px;
+}
+
+.plan-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-family: 'Alata', sans-serif !important;
+}
+
+.plan {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: 'Alata', sans-serif !important;
+}
+
+.basic-plan {
+  border: 1px solid #555;
+  font-family: 'Alata', sans-serif !important;
+}
+
+.expert-plan {
+  border: 1px solid #4cd137;
+  position: relative;
+}
+
+.expert-plan .discount {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background-color: #4cd137;
+  color: #000;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Alata', sans-serif !important;
+}
+
+.billing-cycle {
+  color: #9e9e9e;
+  font-size: 14px;
+}
+
+.custom-button {
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--ion-color-primary), var(--ion-color-secundary));
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: opacity 0.2s;
+  font-family: 'Alata', sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.custom-button:hover {
+  opacity: 0.9;
+}
+
+.cancellation-text {
+  font-size: 12px;
+  color: #9e9e9e;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Alata', sans-serif !important;
+}

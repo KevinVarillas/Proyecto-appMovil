@@ -1,0 +1,48 @@
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<ion-header class="ion-no-border"  >
+  <ion-toolbar class="wrapper">
+    <ion-item lines="none">
+      <ion-back-button defaultHref="/perfil"></ion-back-button>
+      <ion-label color="black">
+          <p>Configuración</p>
+      </ion-label>
+      </ion-item>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content [fullscreen]="true" color="black">
+    <ion-item color="black">
+      <ion-label>
+        <h2>GuímarBot Expert Family</h2>
+        <p>Tu suscripción se renovará 23/04/2025</p>
+      </ion-label>
+    </ion-item>
+    <div class="custom-button">
+      <span>Editar Perfil</span>
+    </div>
+    <div class="custom-button" (click)="manageSubscription()">
+      <span>Administrar suscripción</span>
+    </div>
+    <ion-note class="ion-padding-start">
+      <p>Si presentas dudas o comentarios sobre tu suscripción, escríbenos al correo team&#64;guímarbot.com</p>
+    </ion-note>
+    <ion-item>
+      <ion-label>Almacenamiento</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Caché de GuímarBot: {{cacheSize}} MB</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Otros datos: {{otherDataSize}} GB</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Libre: {{freeSpace}} GB</ion-label>
+    </ion-item>
+
+    <div class="custom-button" (click)="clearCache()">
+      <span>Eliminar caché</span>
+    </div>
+    <ion-note class="ion-padding-start">
+      <p>Al eliminar el cache de Platzi todos los archivos temporales serán eliminados, lo que ayuda a mejorar la velocidad en conexiones lentas. Tus descargas no serán eliminadas.</p>
+    </ion-note>
+</ion-content>

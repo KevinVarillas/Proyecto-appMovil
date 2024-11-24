@@ -1,0 +1,83 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="wrapper">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/perfil"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Suscríbete y descarga</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="black">
+  <div class="content">
+    <h2>Contenido profesional y actualizado con certificados digitales</h2>
+    <h3>BENEFICIOS</h3>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>English Academy, Escuela de Startups y Liderazgo</ion-col>
+        <ion-col class="check-col">
+          <p class="x-mark">✕</p>
+        </ion-col>
+        <ion-col class="check-col">
+          <p class="check-mark">✔</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Descargas en la app</ion-col>
+        <ion-col class="check-col">
+          <p class="x-mark">✕</p>
+        </ion-col>
+        <ion-col class="check-col">
+          <p class="check-mark">✔</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Eventos exclusivos como la PlatziConf</ion-col>
+        <ion-col class="check-col">
+          <p class="x-mark">✕</p>
+        </ion-col>
+        <ion-col class="check-col">
+          <p class="check-mark">✔</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Certificados físicos para rutas de perfil profesional</ion-col>
+        <ion-col class="check-col">
+          <p class="x-mark">✕</p>
+        </ion-col>
+        <ion-col class="check-col">
+          <p class="check-mark">✔</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="plan-container">
+      <div class="plan basic-plan">
+        <h4>Básico - 1 persona</h4>
+        <p class="price">🇵🇪 S/ 100 / mes</p>
+        <p class="billing-cycle">Anual</p>
+      </div>
+
+      <div class="plan expert-plan">
+        <h4>Experto - 2 personas </h4>
+        <p class="price">🇵🇪 S/ 1,400 / año</p>
+        <p class="discount">Ahorras 5 meses al año</p>
+        <p class="billing-cycle">Anual</p>
+      </div>
+      <div class="plan basic-plan">
+        <h4>Expert Duo - 4 personas</h4>
+        <p class="price">🇵🇪 S/ 2,800 / año</p>
+        <p class="billing-cycle">Anual</p>
+      </div>
+    </div>
+
+    <div class="custom-button" [routerLink]="['/metodopago']">
+      <span>Suscríbete a Expert →</span>
+    </div>
+
+    <p class="cancellation-text">
+      Puede cancelar la renovación de su suscripción cuando lo desee. Se aplican la Política de privacidad y las Condiciones generales.
+    </p>
+  </div>
+
+</ion-content>

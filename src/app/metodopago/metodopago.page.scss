@@ -1,0 +1,109 @@
+ion-header {
+  --background-color: black;
+
+  ion-toolbar.wrapper {
+  --background: url('../../assets/img/header.png') no-repeat center center/cover;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  ion-item{
+    --background: transparent;
+    margin: 1.5vh 0;
+
+  }
+      p {
+        margin-top: 15px;
+        font-size: 2rem;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Alata', sans-serif !important;
+
+      }
+
+  }
+}
+
+ion-back-button {
+  color: rgb(255, 255, 255); /* Asegúrate que el ícono sea visible */
+  font-size: 50px;
+  margin-top: 15px;
+}
+
+
+ion-content {
+  color: white;
+}
+
+.custom-button {
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--ion-color-primary), var(--ion-color-secundary));
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: opacity 0.2s;
+  font-family: 'Alata', sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.custom-button:hover {
+  opacity: 0.9;
+}
+
+.payment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.payment-modal .payment-content {
+  background-color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-modal ion-toolbar {
+  --background: transparent;
+  color: white;
+  font-family: 'Alata', sans-serif;
+  padding: 0 10px;
+}
+
+.payment-modal ion-title {
+  font-size: 1.3rem;
+  font-family: 'Alata', sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+.payment-options {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.payment-options p {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}

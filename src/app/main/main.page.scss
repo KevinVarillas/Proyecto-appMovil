@@ -1,0 +1,58 @@
+ion-content {
+  position: relative;
+  swiper-container {
+    --swiper-pagination-color: linear-gradient(90deg, var(--ion-color-primary), var(--ion-color-secundary)); /* Degradado en los bullets */
+    height: 100%;
+    div {
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
+swiper-container::part(bullet-active) {
+  margin-bottom:1vh;
+  width: 40px;
+  border-radius: 4px;
+}
+
+swiper-container::part(bullet) {
+  margin-bottom:1vh;
+  width: 15px;
+  border-radius: 4px;
+  background:#fff;
+  opacity: 1;
+}
+
+.custom-button {
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--ion-color-primary), var(--ion-color-secundary));
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: opacity 0.2s;
+  font-family: 'Alata', sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+.custom-button:hover {
+  opacity: 0.9;
+}
+
+ion-footer{
+  ion-toolbar {
+    --background:#000000;
+    padding: 10px;
+  }
+}

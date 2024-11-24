@@ -1,0 +1,188 @@
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+<ion-header class="ion-no-border"  >
+  <ion-toolbar class="wrapper">
+    <ion-item lines="none">
+      <ion-label color="black">
+        <div>
+          <ion-text>Bienvenido a GuímarBot,</ion-text>
+        </div>
+        <div>
+          <p>Cielo</p>
+        <img src="assets/img/logoo.png" />
+        </div>
+      </ion-label>
+      <ion-fab-button size="big" (click)="manageSubscription()">
+        <ion-icon name="rocket-outline" color="medium"></ion-icon>
+        <ion-badge>&#9679;</ion-badge>
+
+      </ion-fab-button>
+      </ion-item>
+
+      <ion-toolbar class="srchBar" mode="ios">
+        <ion-row>
+          <ion-col size="10">
+            <ion-searchbar placeholder="Buscar cursos"></ion-searchbar>
+          </ion-col>
+          <ion-col size="2">
+            <ion-fab-button size="small" color="dark">
+              <ion-icon name="options-outline" color="medium"></ion-icon>
+            </ion-fab-button>
+          </ion-col>
+        </ion-row>
+      </ion-toolbar>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content [fullscreen]="true" color="black">
+
+  <ion-list class="ion-margin-top">
+    <ion-item-divider mode="ios" color="black">
+      Descubre lo que hay para ti
+    </ion-item-divider>
+    <swiper-container
+    #escuela
+    [modules]="swiperModules"
+    [slidesPerView]="2"
+    [keyboard]="true"
+    [centerSlides]="true"
+  >
+    @for(escuela of escuelas; track $index) {
+      <swiper-slide *ngFor="let escuela of escuelas">
+        <ion-card class="escuela" [routerLink]="['/', escuela.path]">
+          <ion-item lines="none">
+            <ion-avatar slot="start">
+              <ion-img [src]="escuela.image"></ion-img>
+            </ion-avatar>
+            <ion-label> {{ escuela.name }} </ion-label>
+          </ion-item>
+        </ion-card>
+      </swiper-slide>
+
+    }
+  </swiper-container>
+</ion-list>
+<ion-list class="ion-margin-top">
+  <ion-list-header mode="ios"> Cursos recomendados para ti
+  </ion-list-header>
+
+  <swiper-container
+  #cursos_recomendados
+  [modules] = "swiperModules"
+  [slidesPerView] = "1"
+  [keyboard]="true"
+  [centerSlides]="true"
+  >
+
+  @for(curso of cursosrecomendados; track $index){
+    <swiper-slide>
+      <ion-card
+        class="curso1"
+        [routerLink]="['/', 'principal', 'cursos', curso?.id]">
+    <ion-item lines="none">
+      <ion-thumbnail slot="start">
+        <ion-img [src]="curso.image"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <p class="profesor">
+          <ion-text color="dark"> {{ curso?.profesor}}</ion-text>
+        </p>
+        <p class="title">
+          <ion-text color="dark"> {{ curso?.name}}</ion-text>
+        </p>
+        <p class="difficulty">
+          <ion-icon name="flame-outline"></ion-icon>
+          {{ curso?.difficulty}}
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+      </swiper-slide>
+  }
+
+  </swiper-container>
+
+</ion-list>
+
+<ion-list class="ion-margin-top">
+  <ion-list-header mode="ios"> Nuestros mejores cursos </ion-list-header>
+  <swiper-container
+  #cursos_recomendados
+  [modules] = "swiperModules"
+  [slidesPerView] = "1"
+  [keyboard]="true"
+  [centerSlides]="true"
+  >
+
+  @for(curso of cursosrecomendados; track $index){
+    <swiper-slide>
+      <ion-card
+        class="curso1"
+        [routerLink]="['/', 'principal', 'cursos', curso?.id]">
+    <ion-item lines="none">
+      <ion-thumbnail slot="start">
+        <ion-img [src]="curso.image"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <p class="profesor">
+          <ion-text color="dark"> {{ curso?.profesor}}</ion-text>
+        </p>
+        <p class="title">
+          <ion-text color="dark"> {{ curso?.name}}</ion-text>
+        </p>
+        <p class="difficulty">
+          <ion-icon name="flame-outline"></ion-icon>
+          {{ curso?.difficulty}}
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+      </swiper-slide>
+  }
+
+  </swiper-container>
+
+</ion-list>
+<ion-list class="ion-margin-top">
+  <ion-list-header mode="ios"> Últimos cursos lanzados </ion-list-header>
+  <swiper-container
+  #cursos_recomendados
+  [modules] = "swiperModules"
+  [slidesPerView] = "1"
+  [keyboard]="true"
+  [centerSlides]="true"
+  >
+
+  @for(curso of cursosrecomendados; track $index){
+    <swiper-slide>
+      <ion-card
+        class="curso1"
+        [routerLink]="['/', 'principal', 'cursos', curso?.id]">
+    <ion-item lines="none">
+      <ion-thumbnail slot="start">
+        <ion-img [src]="curso.image"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <p class="profesor">
+          <ion-text color="dark"> {{ curso?.profesor}}</ion-text>
+        </p>
+        <p class="title">
+          <ion-text color="dark"> {{ curso?.name}}</ion-text>
+        </p>
+        <p class="difficulty">
+          <ion-icon name="flame-outline"></ion-icon>
+          {{ curso?.difficulty}}
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+      </swiper-slide>
+  }
+
+  </swiper-container>
+
+</ion-list>
+</ion-content>
+
+
+

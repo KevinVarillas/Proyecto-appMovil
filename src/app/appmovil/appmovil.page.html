@@ -1,0 +1,145 @@
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+<ion-header class="ion-no-border">
+  <ion-toolbar class="wrapper">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/principal"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="black">
+        <ion-card-header class="header">
+          <img src="assets/img/app.png" />
+          <ion-card-title>Escuela Aplicaciones</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <p class="description">
+              El desarrollo de aplicaciones móviles incluye las herramientas necesarias para crear interfaces visuales interactivas y gestionar el almacenamiento, análisis y procesamiento de datos. Es un ecosistema dinámico que abre múltiples posibilidades para desarrollar proyectos innovadores. Únete a esta industria que impulsa tu crecimiento profesional y te permite acceder a algunos de los empleos mejor remunerados a nivel mundial.
+            </p>
+                <ion-label class="section-title">Introducción a las Aplicaciones Móviles</ion-label>
+            <ion-list class="ion-margin-top">
+              <ion-list-header mode="ios"> Fundamento de Aplicaciones Móviles
+              </ion-list-header>
+
+              <swiper-container
+              #cursos_recomendados
+              [modules] = "swiperModules"
+              [slidesPerView] = "1"
+              [keyboard]="true"
+              [centerSlides]="true"
+              >
+
+              @for(curso of cursosrecomendados; track $index){
+                <swiper-slide>
+                  <ion-card
+                    class="curso1"
+                    [routerLink]="['/', 'principal', 'cursos', curso?.id]">
+                <ion-item lines="none">
+                  <ion-thumbnail slot="start">
+                    <ion-img [src]="curso.image"></ion-img>
+                  </ion-thumbnail>
+                  <ion-label>
+                    <p class="profesor">
+                      <ion-text color="dark"> {{ curso?.profesor}}</ion-text>
+                    </p>
+                    <p class="title">
+                      <ion-text color="dark"> {{ curso?.name}}</ion-text>
+                    </p>
+                    <p class="difficulty">
+                      <ion-icon name="flame-outline"></ion-icon>
+                      {{ curso?.difficulty}}
+                    </p>
+                  </ion-label>
+                </ion-item>
+              </ion-card>
+                  </swiper-slide>
+              }
+
+              </swiper-container>
+
+            </ion-list>
+            <ion-list class="ion-margin-top">
+              <ion-list-header mode="ios"> IONIC
+              </ion-list-header>
+
+              <swiper-container
+              #cursos_recomendados
+              [modules] = "swiperModules"
+              [slidesPerView] = "1"
+              [keyboard]="true"
+              [centerSlides]="true"
+              >
+
+              @for(curso of cursosrecomendados; track $index){
+                <swiper-slide>
+                  <ion-card
+                    class="curso1"
+                    [routerLink]="['/', 'principal', 'cursos', curso?.id]">
+                <ion-item lines="none">
+                  <ion-thumbnail slot="start">
+                    <ion-img [src]="curso.image"></ion-img>
+                  </ion-thumbnail>
+                  <ion-label>
+                    <p class="profesor">
+                      <ion-text color="dark"> {{ curso?.profesor}}</ion-text>
+                    </p>
+                    <p class="title">
+                      <ion-text color="dark"> {{ curso?.name}}</ion-text>
+                    </p>
+                    <p class="difficulty">
+                      <ion-icon name="flame-outline"></ion-icon>
+                      {{ curso?.difficulty}}
+                    </p>
+                  </ion-label>
+                </ion-item>
+              </ion-card>
+                  </swiper-slide>
+              }
+
+              </swiper-container>
+
+            </ion-list>
+            <ion-list class="ion-margin-top">
+              <ion-list-header mode="ios"> Flutter
+              </ion-list-header>
+
+              <swiper-container
+              #cursos_recomendados
+              [modules] = "swiperModules"
+              [slidesPerView] = "1"
+              [keyboard]="true"
+              [centerSlides]="true"
+              >
+
+              @for(curso of cursosrecomendados; track $index){
+                <swiper-slide>
+                  <ion-card
+                    class="curso1"
+                    [routerLink]="['/', 'principal', 'cursos', curso?.id]">
+                <ion-item lines="none">
+                  <ion-thumbnail slot="start">
+                    <ion-img [src]="curso.image"></ion-img>
+                  </ion-thumbnail>
+                  <ion-label>
+                    <p class="profesor">
+                      <ion-text color="dark"> {{ curso?.profesor}}</ion-text>
+                    </p>
+                    <p class="title">
+                      <ion-text color="dark"> {{ curso?.name}}</ion-text>
+                    </p>
+                    <p class="difficulty">
+                      <ion-icon name="flame-outline"></ion-icon>
+                      {{ curso?.difficulty}}
+                    </p>
+                  </ion-label>
+                </ion-item>
+              </ion-card>
+                  </swiper-slide>
+              }
+
+              </swiper-container>
+
+            </ion-list>
+        </ion-card-content>
+</ion-content>

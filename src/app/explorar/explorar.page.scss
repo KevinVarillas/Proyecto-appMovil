@@ -1,0 +1,124 @@
+
+ion-header {
+  --background-color: black;
+
+  ion-toolbar.wrapper {
+  --background: url('../../assets/img/header.png') no-repeat center center/cover;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  ion-item, ion-toolbar.srchBar{
+    --background: transparent;
+  }
+  ion-item {
+    margin: 1vh 0;
+
+      p {
+        margin-top: 13px;
+        font-size: 2rem;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Alata', sans-serif !important;
+
+      }
+
+
+    ion-fab-button {
+      --background: #fff;
+      ion-badge {
+        color: var(--ion-color-primary);
+        position: absolute;
+          top: 0;
+          right: 0;
+          margin-top: 0.90rem;
+          margin-right: 0.80rem;
+          font-size: 0.1rem;
+          padding: 0.25rem !important;
+          border-radius: 50px;
+      }
+    }
+  }
+
+  ion-searchbar {
+    --placeholder-color: #666666;
+    margin-top: 2px;
+    margin-left: 10px;
+    font-family: 'Alata', sans-serif !important;
+
+
+  }
+
+  ion-toolbar.srchBar {
+    ion-row {
+      background: #ffffff;
+      border-radius: 25px;
+      margin: 5px 5px 8px 5px;
+      ion-col {
+        padding: 0;
+      }
+
+    }
+  }
+  ion-fab-button{
+    --box-shadow:none;
+    ion-icon{
+      font-size: 1.3rem;
+    }
+  }
+  ion-searchbar{
+    padding:0;
+    --border-radius:25px;
+    --background: #ffffff;
+  }
+
+}
+}
+
+/* Contenido */
+ion-content {
+  ion-list-header {
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-family: 'Alata', sans-serif !important;
+
+  }
+
+  ion-item {
+    --background: transparent;
+    margin: 15px 0; /* Aumentar espacio entre ítems */
+    color: white;
+
+
+    /* Alinear el contenido centrado verticalmente */
+    ion-label {
+      font-size: 1.3rem;
+      margin-left: 8px;
+      font-weight: bold;
+      font-family: 'Alata', sans-serif !important;
+
+    }
+
+    ion-thumbnail {
+      --border-radius: 50%;
+      width: 50px; /* Tamaño de los íconos */
+      height: 50px;
+
+      /* Borde con degradado */
+      ion-img {
+        border-radius: 50%;
+        border: 2px solid transparent; /* Añadir espacio alrededor del icono */
+        background: linear-gradient(white, white) padding-box,
+                    linear-gradient(135deg, #ff416c, #ff4b2b) border-box;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    ion-icon {
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+}

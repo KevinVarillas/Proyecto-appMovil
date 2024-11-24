@@ -1,0 +1,32 @@
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<ion-header class="ion-no-border"  >
+  <ion-toolbar class="wrapper">
+    <ion-item lines="none">
+      <ion-back-button defaultHref="/perfil"></ion-back-button>
+      <ion-label color="black">
+          <p>Metodos de Pago</p>
+      </ion-label>
+      </ion-item>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="payment-modal">
+    <div class="payment-content">
+      <!-- Removed the second ion-header here -->
+      <div class="payment-options">
+        <p>Selecciona un método de pago:</p>
+        <div class="custom-button" [routerLink]="['/tarjeta']">
+          <span>Agregar tarjeta de crédito o débito</span>
+        </div>
+        <div class="custom-button" [routerLink]="['/tarjeta']">
+          <span>Pago con Yape</span>
+        </div>
+        <div class="custom-button" [routerLink]="['/tarjeta']">
+          <span>Pago con Plin</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</ion-content>

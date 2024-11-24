@@ -1,0 +1,26 @@
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+<ion-content>
+  <swiper-container
+    #onboarding
+    [modules]="SwiperModules"
+    [pagination]="{clickable: true}"
+    [keyboard]="true"
+  >
+    @for(screen of onboardingScreens; track $index) {
+      <swiper-slide>
+        <div
+          [ngStyle]="{'background-image': 'url(assets/img/' + screen?.image + ')'}"
+        ></div>
+      </swiper-slide>
+    }
+  </swiper-container>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div class="custom-button" routerLink="/login">
+      <span>Comenzar</span>
+    </div>
+  </ion-toolbar>
+</ion-footer>

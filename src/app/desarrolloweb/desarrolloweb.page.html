@@ -1,0 +1,145 @@
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+<ion-header class="ion-no-border">
+  <ion-toolbar class="wrapper">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/principal"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="black">
+        <ion-card-header class="header">
+          <img src="assets/img/web.png" />
+          <ion-card-title>Escuela Desarrollo Web</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <p class="description">
+                El desarrollo web está compuesto por aquellas herramientas con las que puedes interactuar visualmente, además de aquello que se encarga del almacenamiento, análisis y procesamiento de los datos. Este es un ecosistema compuesto por múltiples caminos que te permitirán crear grandes proyectos. Únete a la industria que te permitirá crecer exponencialmente en tu carrera profesional y ser parte de los empleos mejor pagados a nivel global.
+            </p>
+                <ion-label class="section-title">Introducción al Desarrollo Web</ion-label>
+            <ion-list class="ion-margin-top">
+              <ion-list-header mode="ios"> Fundamento de Programación y desarrollo web
+              </ion-list-header>
+
+              <swiper-container
+              #cursos_recomendados
+              [modules] = "swiperModules"
+              [slidesPerView] = "1"
+              [keyboard]="true"
+              [centerSlides]="true"
+              >
+
+              @for(curso of cursosrecomendados; track $index){
+                <swiper-slide>
+                  <ion-card
+                    class="curso1"
+                    [routerLink]="['/', 'principal', 'cursos', curso?.id]">
+                <ion-item lines="none">
+                  <ion-thumbnail slot="start">
+                    <ion-img [src]="curso.image"></ion-img>
+                  </ion-thumbnail>
+                  <ion-label>
+                    <p class="profesor">
+                      <ion-text color="dark"> {{ curso?.profesor}}</ion-text>
+                    </p>
+                    <p class="title">
+                      <ion-text color="dark"> {{ curso?.name}}</ion-text>
+                    </p>
+                    <p class="difficulty">
+                      <ion-icon name="flame-outline"></ion-icon>
+                      {{ curso?.difficulty}}
+                    </p>
+                  </ion-label>
+                </ion-item>
+              </ion-card>
+                  </swiper-slide>
+              }
+
+              </swiper-container>
+
+            </ion-list>
+            <ion-list class="ion-margin-top">
+              <ion-list-header mode="ios"> HTML y CSS desde cero
+              </ion-list-header>
+
+              <swiper-container
+              #cursos_recomendados
+              [modules] = "swiperModules"
+              [slidesPerView] = "1"
+              [keyboard]="true"
+              [centerSlides]="true"
+              >
+
+              @for(curso of cursosrecomendados; track $index){
+                <swiper-slide>
+                  <ion-card
+                    class="curso1"
+                    [routerLink]="['/', 'principal', 'cursos', curso?.id]">
+                <ion-item lines="none">
+                  <ion-thumbnail slot="start">
+                    <ion-img [src]="curso.image"></ion-img>
+                  </ion-thumbnail>
+                  <ion-label>
+                    <p class="profesor">
+                      <ion-text color="dark"> {{ curso?.profesor}}</ion-text>
+                    </p>
+                    <p class="title">
+                      <ion-text color="dark"> {{ curso?.name}}</ion-text>
+                    </p>
+                    <p class="difficulty">
+                      <ion-icon name="flame-outline"></ion-icon>
+                      {{ curso?.difficulty}}
+                    </p>
+                  </ion-label>
+                </ion-item>
+              </ion-card>
+                  </swiper-slide>
+              }
+
+              </swiper-container>
+
+            </ion-list>
+            <ion-list class="ion-margin-top">
+              <ion-list-header mode="ios"> JavaScript para Fronted
+              </ion-list-header>
+
+              <swiper-container
+              #cursos_recomendados
+              [modules] = "swiperModules"
+              [slidesPerView] = "1"
+              [keyboard]="true"
+              [centerSlides]="true"
+              >
+
+              @for(curso of cursosrecomendados; track $index){
+                <swiper-slide>
+                  <ion-card
+                    class="curso1"
+                    [routerLink]="['/', 'principal', 'cursos', curso?.id]">
+                <ion-item lines="none">
+                  <ion-thumbnail slot="start">
+                    <ion-img [src]="curso.image"></ion-img>
+                  </ion-thumbnail>
+                  <ion-label>
+                    <p class="profesor">
+                      <ion-text color="dark"> {{ curso?.profesor}}</ion-text>
+                    </p>
+                    <p class="title">
+                      <ion-text color="dark"> {{ curso?.name}}</ion-text>
+                    </p>
+                    <p class="difficulty">
+                      <ion-icon name="flame-outline"></ion-icon>
+                      {{ curso?.difficulty}}
+                    </p>
+                  </ion-label>
+                </ion-item>
+              </ion-card>
+                  </swiper-slide>
+              }
+
+              </swiper-container>
+
+            </ion-list>
+        </ion-card-content>
+</ion-content>

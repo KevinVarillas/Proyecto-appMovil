@@ -1,0 +1,125 @@
+*{
+  font-family: 'Alata', sans-serif;
+}
+ion-header {
+  --background-color: black;
+
+  ion-toolbar.wrapper {
+  --background: url('../../assets/img/header.png') no-repeat center center/cover;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  ion-item, ion-toolbar.srchBar{
+    --background: transparent;
+  }
+  ion-item {
+    margin: 1vh 0;
+    ion-label {
+      p {
+        margin-top: 15px;
+        font-size: 2rem;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Alata', sans-serif !important;
+
+      }
+    }
+      ion-fab-button {
+        --background: #fff;
+        ion-badge {
+          color: var(--ion-color-primary);
+          position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 0.90rem;
+            margin-right: 0.80rem;
+            font-size: 0.1rem;
+
+            padding: 0.25rem !important;
+            border-radius: 50px;
+        }
+      }
+  }
+
+  ion-searchbar {
+    --placeholder-color: #666666;
+    margin-top: 2px;
+    margin-left: 10px;
+    font-family: 'Alata', sans-serif !important; /* Usa !important para forzar la aplicación */
+  }
+
+  ion-toolbar.srchBar {
+    ion-row {
+      background: #ffffff;
+      border-radius: 25px;
+      margin: 5px 5px 8px 5px;
+      ion-col {
+        padding: 0;
+      }
+
+    }
+  }
+  ion-fab-button{
+    --box-shadow:none;
+    ion-icon{
+      font-size: 1.3rem;
+    }
+  }
+  ion-searchbar{
+    padding:0;
+    --border-radius:25px;
+    --background: #ffffff;
+  }
+
+
+}
+}
+
+ion-avatar img {
+  border-radius: 50%;
+}
+
+
+ion-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.total-amount {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.custom-button {
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--ion-color-primary), var(--ion-color-secundary));
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: opacity 0.2s;
+  font-family: 'Alata', sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+.custom-button:hover {
+  opacity: 0.9;
+}
+

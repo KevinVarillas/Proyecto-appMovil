@@ -1,0 +1,106 @@
+.input {
+  font-size: 18px; /* Ajustado para un tamaño más razonable */
+}
+
+ion-item {
+  margin-bottom: 16px;
+}
+
+.header {
+  margin-top: 50px; /* Ajusta este valor para subir o bajar el formulario */
+  text-align: center;
+}
+
+.header .title {
+  font-size: 2.5rem;
+  font-family: 'Alata', sans-serif; /* Tipografía moderna y elegante */
+  color: var(--ion-color-primary); /* Color atractivo para el título */
+  font-weight: bold;
+  margin-bottom: 13px; /* Un poco más de espacio para separar los elementos */
+}
+
+.header .subTitle {
+  color: rgb(186, 186, 186);
+  font-size: 1.3rem; /* Un poco más grande para legibilidad */
+  font-family: 'Alata', sans-serif; /* Consistencia en la tipografía */
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.header ion-img {
+  width: 100%;
+  height: 15rem;
+
+}
+
+.signupLink {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  bottom: 0;
+  width: 80%;
+  right: 0;
+}
+
+.signupLink p {
+  font-size: 1.5rem;
+  font-family: 'Alata', sans-serif; /* Cambia a una tipografía moderna */
+  color:  var(--ion-color-primary);; /* Color atractivo para la tipografía */
+  font-weight: bold;
+  margin-left: 95px;
+}
+
+.signupLink a {
+  font-family: 'Alata', sans-serif; /* Mantiene la tipografía moderna */
+  text-decoration: none;
+  color: #FF5733; /* Color vibrante para llamar la atención */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.signupLink a:hover {
+  color: #B006D0; /* Color cuando se pasa el cursor sobre el enlace */
+}
+
+.forgotPassword {
+  display: flex;
+  justify-content: center; /* Alinear a la izquierda */
+  align-items: center; /* Alinear el checkbox con el texto */
+  font-family: 'Alata', sans-serif; /* Cambia a una tipografía moderna */
+
+}
+
+.forgotPassword a {
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-right: -150px;
+}
+
+.custom-button {
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--ion-color-primary), var(--ion-color-secundary));
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: opacity 0.2s;
+  font-family: 'Alata', sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.custom-button:hover {
+  --background: white; /* Color de fondo al pasar el mouse */
+  --color: #4E0894; /* Color del texto al pasar el mouse */
+}
+
+.header .title, .header .subTitle, .input, .signupLink p, .signupLink a, .custom-button {
+  font-family: 'Alata', sans-serif; /* Tipografía moderna */
+}

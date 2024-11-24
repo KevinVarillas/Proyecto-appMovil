@@ -1,0 +1,69 @@
+.input {
+  font-size: 300;
+}
+
+.header .title {
+  font-size: 1.7rem;
+  font-family: 'Alata', sans-serif; /* Tipografía moderna y elegante */
+  color: var(--ion-color-primary); /* Color atractivo para el título */
+  font-weight: bold; /* Negrita */
+}
+
+.header {
+  margin-top: 90px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  .subTitle {
+      color:rgb(186, 186, 186);
+      font-size: 1.3rem;
+  }
+
+  title {
+      font-size: 2rem;
+  }
+
+}
+.signupLink {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  align-content: center;
+  position: absolute;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  right: 0;
+
+  p {
+      font-size: 1rem;
+      font-family: 'Alata', sans-serif;
+  }
+
+  a {
+      text-decoration: none;
+      font-family: 'Alata', sans-serif;
+  }
+}
+.custom-button {
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--ion-color-primary), var(--ion-color-secundary));
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: opacity 0.2s;
+  font-family: 'Alata', sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+.header .title, .header .subTitle, .input, .signupLink p, .signupLink a, .custom-button {
+  font-family: 'Alata', sans-serif; /* Tipografía moderna */
+}
+
+

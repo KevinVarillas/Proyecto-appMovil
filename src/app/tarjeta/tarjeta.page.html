@@ -1,0 +1,72 @@
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<ion-header class="ion-no-border"  >
+  <ion-toolbar class="wrapper">
+    <ion-item lines="none">
+      <ion-back-button defaultHref="/suscripcion"></ion-back-button>
+      <ion-label color="black">
+          <p>Agregar tarjeta de crédito</p>
+      </ion-label>
+      </ion-item>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true" color="black">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Platzi Expert</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="stacked">Número de tarjeta</ion-label>
+          <ion-input type="number" [(ngModel)]="card.number" placeholder="XXXX XXXX XXXX XXXX"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <ion-label position="stacked">MM/AA</ion-label>
+                <ion-input type="text" maxlength="5" placeholder="MM/AA" [(ngModel)]="card.expiry"></ion-input>
+              </ion-col>
+              <ion-col size="6">
+                <ion-label position="stacked">Código CVV</ion-label>
+                <ion-input type="number" maxlength="4" placeholder="CVV" [(ngModel)]="card.cvv"></ion-input>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Nombre del titular</ion-label>
+          <ion-input type="text" placeholder="Nombre completo" [(ngModel)]="card.name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">País o región</ion-label>
+          <ion-select [(ngModel)]="card.country">
+            <ion-select-option value="PE">Perú (PE)</ion-select-option>
+            <!-- Agrega más opciones según sea necesario -->
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Dirección</ion-label>
+          <ion-input type="text" placeholder="Dirección" [(ngModel)]="card.address"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Departamento, suite, etc. (opcional)</ion-label>
+          <ion-input type="text" placeholder="Departamento, suite, etc." [(ngModel)]="card.suite"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Distrito</ion-label>
+          <ion-input type="text" placeholder="Distrito" [(ngModel)]="card.district"></ion-input>
+        </ion-item>
+
+        <div class="custom-button">
+          <span>Guardar tarjeta</span>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>

@@ -1,0 +1,55 @@
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<ion-header class="ion-no-border"  >
+  <ion-toolbar class="wrapper">
+    <ion-item lines="none">
+      <ion-label color="black">
+          <p>Perfil</p>
+      </ion-label>
+      <ion-fab-button size="big" [routerLink]="['/infoescu']">
+        <ion-icon name="settings-outline" color="medium"></ion-icon>
+      </ion-fab-button>
+      </ion-item>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content [fullscreen]="true" color="black">
+  <div class="profile-header">
+    <ion-avatar class="profile-avatar">
+      <img src="assets/img/profile.png" alt="Avatar">
+    </ion-avatar>
+    <div class="profile-info">
+      <h2 class="profile-name">Cielo Danira La Rosa Solis</h2>
+      <p class="profile-handle">&#64;cierosa.soli • 🇵🇪 Perú</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="custom-button" [routerLink]="['/home']">
+      <span>Ir a inicio</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-instructions">Mira una clase o comparte un aporte para unirte al ranking de esta semana.</p>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Certificados obtenidos</p>
+    <!-- Puedes añadir los certificados aquí -->
+  </div>
+
+  <div class="section">
+    <p class="section-title">Cursos completados</p>
+    <!-- Puedes añadir los certificados aquí -->
+  </div>
+
+  <div class="subscription-section">
+    <p>Adquiere una suscripción para certificar tu conocimiento.</p>
+    <div class="custom-button" [routerLink]="['/suscripcion']">
+      <span>Suscribirme a Expert</span>
+    </div>
+  </div>
+
+</ion-content>
+
+
+

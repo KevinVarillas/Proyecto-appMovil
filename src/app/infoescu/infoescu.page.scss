@@ -1,0 +1,94 @@
+ion-header {
+  --background-color: black;
+
+  ion-toolbar.wrapper {
+  --background: url('../../assets/img/header.png') no-repeat center center/cover;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  ion-item{
+    --background: transparent;
+    margin: 1.5vh 0;
+
+  }
+      p {
+        margin-top: 15px;
+        font-size: 2rem;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Alata', sans-serif !important;
+
+      }
+
+  }
+}
+
+ion-back-button {
+  color: rgb(255, 255, 255); /* Asegúrate que el ícono sea visible */
+  font-size: 50px;
+  margin-top: 15px;
+}
+
+
+ion-content {
+  color: white;
+}
+
+.custom-button {
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--ion-color-primary), var(--ion-color-secundary));
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: opacity 0.2s;
+  font-family: 'Alata', sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+
+}
+
+.custom-button:hover {
+  opacity: 0.9;
+}
+
+ion-note {
+  color: #8f8f8f;
+  p{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 0px;
+    font-size: 1rem;
+    font-family: 'Alata', sans-serif;
+  }
+}
+
+ion-select {
+  --color: white;
+}
+
+ion-item {
+  --color: white;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+
+  font-family: 'Alata', sans-serif !important;
+
+}
+
+
+ion-label {
+  --color: white;
+  font-family: 'Alata', sans-serif !important;
+  h2{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 16px;
+  }
+}
+
